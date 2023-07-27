@@ -1,0 +1,271 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 8%;
+    background: transparent;
+    background-color: black;
+    box-shadow: 0 0 15px purple;
+
+}
+
+.logo-nasa{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    colocar uma cor diferente
+    border-bottom: 2px solid purple;
+} */
+
+/* Codigo para teste */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+/* 
+body{
+    background: #000;
+}
+
+.nav-menu:before,
+.nav-menu:after{
+    content: " ";
+    display: table;
+}
+
+.nav-menu:after{
+    clear: both;
+}
+
+.nav-menu{
+    zoom: 1;
+}
+
+.menu,
+.submenu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu{
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit;
+}
+
+.menu > li{
+    color: #fff;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+    padding: 0 50px 0 50px;
+    
+}
+
+.menu a{
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.menu a:hover{
+    color: #ffffff
+}
+
+.menu li:hover{
+    background-color: #000;
+}
+
+.menu > li > a{
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown 
+.menu-item{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+    
+}
+
+.menu-item li{
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #fff;
+}
+
+.menu-item li:hover{
+    box-shadow: 0 0 10px 3px #f0adf9;
+}
+
+.menu-item > li > a{
+    color: #000;
+    padding: 1em 2em;
+}
+
+.menu-item > li > a:hover{
+    color: #fff;
+}
+
+.menu-item > li::after{
+    color: #fff;
+    content: ' ';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+}
+
+.menu-item > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+}
+
+.menu-item > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.menu-item > li:nth-child(odd)::after{
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}
+
+.menu-item > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+
+.menu-item > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.menu-item > li:nth-child(even)::after{
+    left: -50%;
+    transform: skewX(25deg) translateX(3deg);
+}
+
+/* Show dropdown 
+.menu-item,
+.menu-item li{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-item li{
+    transition: .2s ease transform;
+}
+
+.menu > li:hover .menu-item,
+.menu > li:hover .menu-item li{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:hover .menu-item li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);
+}
+
+.menu > li:hover .menu-item li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    margin: 20px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.navbar label{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
